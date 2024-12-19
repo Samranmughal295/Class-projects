@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/Student/Downloads/responsive%20layout/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .parent {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+            gap: 30px;
+            background-color: black;
+        }
+
+        .parent .child {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media screen and (max-width:530px) {
+            .parent .child {
+                width: 200px;
+                height: 350px;
+                background-color: brown;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>BMW M4</h1>
+    <div class="parent">
+        <div class="child"> <img src="./responsive layout_files/2025-BMW-M4-CS-001.jpg" alt=""></div>
+        <div class="child"><img src="./responsive layout_files/2025-BMW-M4-CS-001.jpg" alt=""></div>
+        <div class="child"><img src="./responsive layout_files/2025-BMW-M4-CS-001.jpg" alt=""></div>
+        <div class="child"><img src="./responsive layout_files/2025-BMW-M4-CS-001.jpg" alt=""></div>
+    </div>
+    
+
+</body></html>
